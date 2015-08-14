@@ -396,7 +396,7 @@ angular.module('textAngular.factories', [])
 		// Do processing for <pre> tags, removing tabs and return carriages outside of them
 		
 		var _preTags = safe.match(/(<pre[^>]*>.*?<\/pre[^>]*>)/ig);
-		var processedSafe = safe.replace(/(&#(9|10);)*/ig, '');
+		var processedSafe = safe;//.replace(/(&#(9|10);)*/ig, '');
 		var re = /<pre[^>]*>.*?<\/pre[^>]*>/ig;
 		var index = 0;
 		var lastIndex = 0;
